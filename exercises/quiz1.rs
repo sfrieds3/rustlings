@@ -13,10 +13,20 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
-
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(num_apples: i32) -> i32 {
+    // let cost_per_apple = match num_apples {
+    //     0..=40 => 2,
+    //     _ => 1,
+    // };
+
+    let cost_per_apple = match num_apples {
+        x if x > 40 => 1,
+        _ => 2,
+    };
+
+    cost_per_apple * num_apples
+}
 
 // Don't modify this function!
 #[test]
